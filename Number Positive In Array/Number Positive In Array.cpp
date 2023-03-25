@@ -25,11 +25,23 @@ int PositiveNumber(int arr[100], int arrlength)
 	int Counter = 0;
 	for (int i = 0; i < arrlength; i++)
 	{
-		if (arr[i] > 0)
+		if (arr[i] >= 0)
 			Counter++;
 	}
 	return Counter;
 }
+
+int NegativeNumber(int arr[100], int arrlength)
+{
+	int Counter = 0;
+	for (int i = 0; i < arrlength; i++)
+	{
+		if (arr[i] < 0)
+			Counter++;
+	}
+	return Counter;
+}
+
 
 int main()
 { 
@@ -39,6 +51,7 @@ int main()
 	PrintArray(arr, arrlength);
 
 	cout <<"\nPositive Number Count IS : " << PositiveNumber(arr, arrlength) << endl;
+	cout <<"\nNegative Number Count IS : " << NegativeNumber(arr, arrlength) << endl;
 
 	return 0; 
 }
