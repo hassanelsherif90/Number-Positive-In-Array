@@ -25,7 +25,7 @@ int PositiveNumber(int arr[100], int arrlength)
 	int Counter = 0;
 	for (int i = 0; i < arrlength; i++)
 	{
-		if (arr[i] > 0)
+		if (arr[i] >= 0)
 			Counter++;
 	}
 	return Counter;
